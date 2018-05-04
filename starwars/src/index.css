@@ -5,3 +5,7 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+* {
+  box-sizing: border-box
+}

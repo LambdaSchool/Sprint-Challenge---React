@@ -1,0 +1,10 @@
+.starCards{
+    text-align: start;
+    margin: 20px 5px;
+    /* border: solid red; */
+}
+
+.cardContainer {
+    height: 200px;
+    width: 450px;
+}
