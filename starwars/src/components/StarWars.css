@@ -1,0 +1,25 @@
+.Characters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.char {
+  width: 400px;
+  background-color: rgba(195, 192, 210, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.char .info ul {
+  list-style-type: none;
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+.info ul img {
+  border-radius: 5px;
+}
