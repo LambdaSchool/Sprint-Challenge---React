@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarwarsList from './components/StarwarsList'
+import Search from "./components/Search";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      inputText: ''
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -29,10 +32,25 @@ class App extends Component {
       });
   };
 
+  changeInput = (event) => {
+    this.setState({ inputText: event.target.value })
+  }
+
+  
+
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         <h1 className="Header">React Wars</h1>
+        <Search 
+          inputText = {this.state.inputText}
+          changeInput = {this.changeInput}
+        />
+        <StarwarsList 
+          starChar={this.state.starwarsChars}
+          inputText ={this.state.inputText}
+        />
+        
       </div>
     );
   }

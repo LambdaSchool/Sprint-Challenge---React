@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2, h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 1.7rem;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+
+  .Header {
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+  }
+
+  form {
+    text-align: left;
+
+    h4 {
+      margin: 0 0 5px 0;
+    }
+
+    input {
+      width: 30%;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      background-color: #443e3e;
+      color: white;
+      border: 1px solid #443e3e;
+      border-radius: 5px;
+      font-size: 1.6rem;
+    }
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      text-align: left;
+      background-color: #72989B;
+      color: white;
+      width: 30%;
+      padding: 0 2%;
+      margin: 10px 0;
+      border-radius: 5px;
+
+      .describe {
+        li {
+          padding: 5px 5%;
+        }
+      }
+    }
+  }
+}
