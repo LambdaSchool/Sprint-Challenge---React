@@ -1,0 +1,36 @@
+.star-wars-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 5%;
+  width: 100%;
+}
+
+.star-wars-character {
+  background-color: #e8d0b7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 0 3px rgba(0,0,0,.15);
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 1.2;
+  margin: 10px;
+  width: 45%;
+  padding: 20px;
+}
+
+.star-wars-character h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.star-wars-character p {
+  font-size: 1.8rem;
+}
+
+.star-wars-character:hover {
+  background-color: #FFFFFF;
+}
