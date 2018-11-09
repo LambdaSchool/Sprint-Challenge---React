@@ -1,11 +1,12 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
-
+      react is a frontend javascript library used to build out user interfaces with a component based modal allowing for reusability of said components in multiple areas or other applications...composability... and one main component (generally) in charge of the functionality and the rendering of the elements and components on the DOM. it also uses heuristic algorithms to "diff" between the virtual DOM that is uses (an in memory snapshot of the state of the DOM and the current state that the users interactions have created) and the actual DOM...thus enabling react to efficiently make modifications based on user interaction that use the least amount of changes to achieve the intended state in the DOM without actually refreshing the page, thus giving faster response/feedback and overall better and faster performance for the end user
 1.  What does it mean to _think_ in react?
-
+      building out smart components that can be utilized across the site or other sites by allowing identifying parts of components and writing them in  a dynamic way so as to allow them to control a multitude of other things instead of one specific element...i.e. the dynamic assigning of the name key in an input so that you can have multiple inputs controlled by the one function/method...reusability and scalability.
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-
+      functional components are components written as functions whos end output is the rendering of something on the DOM. class components come with some more functionality and features than functional components. class components have a property called state that they control and pass down to other components below them in the react tree through props (properties). state is an object storing data that the children components may need access to to accomplish the functionality we want them to. class components also have access to the various life-cycle methods and can do things at specific points during these methods based on their needs
 1.  Describe state.
-
+      state is reacts in memory representation of what we want the DOM to be like at that particular moment, holding in itself any of the pertinent information/attributes that are needed. components that make changes to what the current state should look like pass this info back ot the main class component in charge and with the snapshot they give, react compares the intended state with the current state in the virtual dom and is thus able to make what modifications are needed in the most optimal way it can
 1.  Describe props.
+      props are the attributes connected to state that class components pass down to their children giving them access to the parts to our application that they need to do their intended jobs. they are the components way of altering state without mutating the original state...reacts api makes us make copies to the data that is state in order to make the needed changes to the virtual dom and in turn the regular dom without ever mutating the original state

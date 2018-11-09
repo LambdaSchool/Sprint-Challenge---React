@@ -1,8 +1,93 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-size: 50px;
+  text-shadow: -5px 5px 1px rgba(255, 255, 255, 0.89),
+    -4px 4px 2px rgba(255, 255, 255, 0.788),
+    -3px 3px 3px rgba(255, 255, 255, 0.623),
+    -2px 2px 4px rgba(255, 255, 255, 0.541),
+    -1px 1px 5px rgba(255, 255, 255, 0.425);
 }
+
 /* write your parent styles in here for your App.js */
+.charContainer {
+  min-width: 30%;
+  width: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px;
+  height: 200px;
+  transition: all .5s ease-in-out;
+  background-image: linear-gradient(to top right, rgba(85, 49, 2, 0.808), rgba(204, 151, 38, 0.479))
+}
+
+.charContainer:hover {
+  transform: scale(1.5);
+  z-index: 1;
+  background-image: linear-gradient(to top right, rgb(145, 83, 3), rgb(204, 151, 38))
+}
+
+.charContainer>h3,
+.charContainer>h5 {
+  text-shadow: -2px 2px 2px rgba(255, 255, 255, 0.623),
+               -1px 1px 3px rgba(255, 255, 255, 0.541),
+                0 0px 4px rgba(255, 255, 255, 0.425);
+}
+
+
+.pagination-container {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.pagination {
+  margin: 10px;
+  width: 25%;
+}
+
+h6 {
+  color: yellow;
+  text-shadow: -2px 2px 2px rgba(2, 37, 78, 0.623),
+               -1px 1px 3px rgba(2, 35, 126, 0.541),
+                0 0px 4px rgba(73, 44, 236, 0.425);
+  transition: all .5s ease-in-out;
+}
+
+h6 > a {
+  text-decoration: none;
+  color: rgb(255, 51, 0);
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+h6:hover {
+  transform: scale(1.5)
+}
+
+button {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  color: rgb(2, 37, 78);
+  border: 2px groove rgb(2, 37, 78);
+  background: yellow;
+  border-radius: 17px;
+  padding: 5px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: yellow;
+  background: rgba(2, 37, 78, 0.623);
+  border: 2px groove yellow;
+  transform: scale(1.05)
+}
+
+button:active {
+  transform: scale(1.03);
+}
