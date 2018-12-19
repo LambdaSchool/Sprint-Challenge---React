@@ -1,0 +1,14 @@
+.character-card {
+  width: 45%;
+  border: 2px solid #dd1616;
+  border-radius: 20%;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  background-color: #3756f9;
+  opacity: 0.9;
+}
+
+.character-stats {
+  display: flex;
+  flex-direction: column;
+}
