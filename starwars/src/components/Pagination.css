@@ -1,0 +1,39 @@
+.counters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.counter {
+  border: 1px solid black;
+  background: goldenrod;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gray;
+  padding: 0.5%;
+  margin: 0 0.5%;
+}
+
+.counter:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  background: black;
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+button {
+  border: 1px solid black;
+  background: goldenrod;
+  border-radius: 2px;
+  margin: 0 1%;
+  padding: 0.5%;
+  box-shadow: 1px 1px 10px gray;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  background: black;
+  color: goldenrod;
+  text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+.Card {
+  width: calc(100% * (1/4));
+  border: 2px solid black;
+  background: goldenrod;
+  border-radius: 20px;
+  margin: 2%;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.Card:hover {
+  border: 2px solid white;
+  background: black;
+  color: goldenrod;
+  transform: scale(1.1);
+}
+
+.charName {
+  text-decoration: underline;
+}
+
+.charProperty {
+  font-weight: bold;
+}
