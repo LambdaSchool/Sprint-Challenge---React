@@ -5,4 +5,35 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+h2 {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  align-self: flex-start;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+li {
+  text-align: left;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.maindiv {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* write your parent styles in here for your App.js */

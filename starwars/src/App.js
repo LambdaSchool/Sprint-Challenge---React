@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DisplayCard from './components/displayCard.js';
 import './App.css';
 
 class App extends Component {
@@ -33,9 +34,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <DisplayCard 
+          starwarsChars={this.state.starwarsChars}
+         />
       </div>
     );
   }
 }
+
 
 export default App;

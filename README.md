@@ -24,13 +24,21 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+  ReactJS is a library developed by the team at Facebook for building user interfaces. The DOM is hard to work with, so React has made it simpler. It also helps things to load much faster because React codes the interaction with the DOM in the simplest way possible. 
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+    Thinking in React is following a set of steps set up by the developers of React. The steps are: 1) break the UI into a component hierarchy (like components and subcomponents), 2) build a static version in React (this is the easy part -- adding interactivity is harder and so should be done separately!), 3) think about the minimal representation of UI state that you will need, 4) identify where your state should live (each component can have its own state if it needs it, but it is important to only add state if it is necessary) and 5) add inverse data flow (the ability to update state when the data the user inputs information into the browser). 
+
+- [x] Describe state.
+
+    State is where data can be stored in React and represents the parts of the app that can change. State is not shared between components. Each component can have its own state, which lives in an object called this.state.  
+
+- [x] Describe props.
+
+    Props is short for "properties". Most components are customizable through the use of props. Props must be passed down the component hierarchy in order to be used properly, unlike state. 
 
 ## Project Set Up
 
